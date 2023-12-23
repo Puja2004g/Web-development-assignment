@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exceptional Handling</title>
+    <link rel="stylesheet" href="exceptions.css">
+    <link rel="icon" href="https://pkhalder.com/wp-content/uploads/2022/02/cb88-java-logo-001.jpg">
+</head>
+
+<body>
+    <header>
+        <h1 class="maps">MAPS</h1>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="exceptions.html">Exceptions</a></li>
+                <li><a href="try.html">Try</a></li>
+                <li><a href="catch.html">Catch</a></li>
+                <li><a href="throw.html">Throw</a></li>
+                <li><a href="throws.html">Throws</a></li>
+                <li><a href="finally.html">Finally</a></li>
+                <li><a href="user_defined_exceptions.html">User Defined Exceptions</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <aside class="content">
+        <h1>Exception Handling </h1>
+        <div class="main">
+            <h2>About Exception Handling</h2>
+            <p>
+                Exception handling is a fundamental aspect of Java programming that allows you to gracefully manage and
+                recover from runtime errors, also known as exceptions. Exceptions are unexpected or erroneous conditions
+                that can occur during program execution. Java provides a robust mechanism for handling exceptions to
+                prevent
+                program crashes and improve error reporting
+            </p>
+            <h2>Understanding Exceptions</h2>
+            <p>
+                Exceptions represent abnormal conditions that occur during the execution of a Java program. These
+                conditions
+                can be caused by factors like user input, file I/O, network issues, and coding errors.
+            </p>
+            <div class="hierarchy">
+                <h2>Exception Hierarchy</h2>
+                <p>
+                    Java has a rich hierarchy of exception classes. It is divided into two main categories:
+                </p>
+                <ul>
+                    <li>Checked Exceptions</li>
+                    <p>
+                        These are exceptions that must be explicitly handled by the programmer. They are usually related
+                        to
+                        external factors such as I/O operations and network communication. Examples include IOException
+                        and
+                        SQLException.
+                    </p>
+                    <li>Unchecked Exceptions</li>
+                    <p>
+                        These exceptions do not require explicit handling and often result from programming errors.
+                        Examples
+                        include NullPointerException and ArithmeticException.
+                    </p>
+            </div>
+            </ul>
+            <h2>Exception Handling Keywords</h2>
+            <p>
+                Java provides key statements and constructs for working with exceptions, including:
+            </p>
+            <div class="hierarchy">
+                <ul>
+                    <li>try</li>
+                    <p>
+                        A try block is used to enclose code that may generate exceptions. If an exception occurs within
+                        the
+                        try
+                        block, it can be caught and handled in a catch block.
+                    </p>
+                    <li>catch</li>
+                    <p>
+                        A catch block follows a try block and is used to catch and handle specific exceptions. It
+                        includes
+                        the
+                        exception type and code to execute when that exception occurs.
+                    </p>
+                    <li>finally</li>
+                    <p>
+                        The finally block, if used, contains code that is executed regardless of whether an exception
+                        occurred
+                        or not. It's typically used for cleanup and resource release.
+                    </p>
+                    <li>throw</li>
+                    <p>
+                        The throw keyword is used to manually throw an exception. This can be useful when you want to
+                        create
+                        custom exceptions or indicate exceptional conditions in your code.
+                    </p>
+                    <li>throws</li>
+                    <p>
+                        The throws keyword is used in method declarations to indicate that the method might throw a
+                        particular
+                        exception. It's part of the method's contract and informs callers of potential exceptions.
+                    </p>
+                </ul>
+            </div>
+            <h2>Try-Catch-Finally Construct</h2>
+            <p>
+                The most common structure for handling exceptions in Java is the try-catch-finally construct. It
+                provides
+                structured exception handling, ensuring that exceptions are caught and processed, and resources are
+                released
+                correctly.</p>
+            <div class="end">
+                <h2>Custom Exceptions</h2>
+                <p>
+                    Java allows you to create custom exception classes by extending existing exception classes. This is
+                    helpful
+                    when you want to represent application-specific exceptional conditions.
+                </p><br>
+            </div>
+        </div>
+    </aside>
+</body>
+</html>

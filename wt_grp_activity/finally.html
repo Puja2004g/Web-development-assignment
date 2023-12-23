@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finally</title>
+    <link rel="stylesheet" href="try.css">
+    <link rel="icon" href="https://pkhalder.com/wp-content/uploads/2022/02/cb88-java-logo-001.jpg">
+</head>
+
+<body>
+    <header>
+        <h1 class="maps">MAPS</h1>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="exceptions.html">Exceptions</a></li>
+                <li><a href="try.html">Try</a></li>
+                <li><a href="catch.html">Catch</a></li>
+                <li><a href="throw.html">Throw</a></li>
+                <li><a href="throws.html">Throws</a></li>
+                <li><a href="finally.html">Finally</a></li>
+                <li><a href="user_defined_exceptions.html">User Defined Exceptions</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <aside class="content">
+        <h1>Finally</h1>
+        <h2>About finally block</h2>
+        <p>The <code>Finally</code> block is part of the error-handling mechanism in JavaScript and is used in
+            conjunction with <code>try...catch</code> statements. It allows you to specify code that should always be
+            executed, regardless of whether an error occurs or not.</p>
+
+        <h2>When is 'Finally' Used?</h2>
+
+        <p>The <code>finally</code> block is used when you need to ensure that certain code, such as cleanup or resource
+            release, is executed whether or not an exception is thrown in the <code>try</code> block. It provides a way
+            to maintain consistency and prevent resource leaks, even in the presence of errors.</p>
+
+        <h2>Advantages of 'Finally'</h2>
+
+        <ol>
+            <li>Resource Cleanup: You can use the <code>finally</code> block to release resources like file handles,
+                network connections, or database connections, ensuring that they are properly closed, regardless of
+                exceptions.</li>
+            <li>Consistency: It helps in maintaining a consistent state, as the code within the <code>finally</code>
+                block is guaranteed to execute, even if an error occurs.</li>
+            <li>Error Handling: You can use it for cleanup or logging operations related to error handling, which can be
+                valuable for debugging and maintaining code.</li>
+        </ol>
+
+        <h2>Syntax of 'Finally'</h2>
+
+        <p>The <code>finally</code> block is used in conjunction with a <code>try...catch</code> statement. The basic
+            syntax is as follows:</p>
+
+        <div class="syntax">
+            <pre>
+            <p>
+            try {
+                // Code that may cause an error
+            } catch (error) {
+                // Code to handle the error
+            } finally {
+                // Code that always executes, whether there's an error or not
+            }
+            </p>
+            </pre>
+
+            <h2>Example:</h2>
+
+            <pre>
+            <p>
+            try {
+                // Open a file
+                // Read data from the file
+            } catch (error) {
+                // Handle file-related error
+            } finally {
+                // Close the file (cleanup operation)
+            }
+            </p>
+        </pre>
+        </div>
+    </aside>
+</body>
+
+</html>

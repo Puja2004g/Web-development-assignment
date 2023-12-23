@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Throw</title>
+</head>
+<link rel="stylesheet" href="try.css">
+<link rel="icon" href="https://pkhalder.com/wp-content/uploads/2022/02/cb88-java-logo-001.jpg">
+
+<body>
+    <header>
+        <h1 class="maps">MAPS</h1>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="exceptions.html">Exceptions</a></li>
+                <li><a href="try.html">Try</a></li>
+                <li><a href="catch.html">Catch</a></li>
+                <li><a href="throw.html">Throw</a></li>
+                <li><a href="throws.html">Throws</a></li>
+                <li><a href="finally.html">Finally</a></li>
+                <li><a href="user_defined_exceptions.html">User Defined Exceptions</a></li>
+            </ul>
+        </nav>
+    </header>
+    <aside class="content">
+        <h1>Throw</h1>
+        <h2>About throw block</h2>
+        <p>The <code>throw</code> statement in java is used to manually generate an exception (an error). This allows
+            you to
+            control how errors are handled in your code.</p>
+
+        <h2>When is 'Throw' Used?</h2>
+
+        <p>The <code>throw</code> statement is used when you want to create a custom error condition in your code. This
+            can
+            be helpful in scenarios where you need to handle specific error situations that aren't covered by built-in
+            error
+            handling mechanisms.</p>
+
+        <h2>Advantages of 'Throw'</h2>
+
+        <ol>
+            <li>Custom Error Handling: You can define and throw custom errors to provide more context and information
+                about
+                the error to the developer or user.</li>
+            <li>Control Flow: It allows you to control the flow of your program when an error occurs, enabling you to
+                handle
+                errors in a way that makes the most sense for your application.</li>
+            <li>Debugging: 'throw' helps in debugging by providing a clear indication of where an error occurred in your
+                code.</li>
+        </ol>
+
+        <h2>Syntax of 'Throw'</h2>
+
+        <p>The basic syntax of the <code>throw</code> statement is as follows:</p>
+
+        <div class="syntax">
+            <p>
+                throw expression;
+            </p>
+        </div>
+
+        <p>Here, <code>expression</code> is the value that you want to throw as an exception. It can be any valid
+            JavaScript
+            expression or an instance of the <code>Error</code> object.</p>
+
+        <h2>Example:</h2>
+        <div class="syntax">
+            <p>
+            try <br>{
+                <br>
+                // Some code that may cause an error
+                <br>
+                
+                if (condition)br {  <br> 
+                    throw new Error('Custom error message'); <br>
+                } <br>
+            }  <br>
+            catch (error) <br>{  <br>
+                console.error('An error occurred: ' + error.message); <br>
+            } <br>
+        </p><br>
+        </div>
+    </aside>
+</body>
+
+</html>

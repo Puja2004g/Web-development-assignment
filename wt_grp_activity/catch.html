@@ -1,0 +1,110 @@
+<html>
+
+<head>
+    <title>
+        Catch Block
+    </title>
+    <link rel="stylesheet" href="try.css">
+    <link rel="icon" href="https://pkhalder.com/wp-content/uploads/2022/02/cb88-java-logo-001.jpg">
+</head>
+
+<body>
+    <header>
+        <h1 class="maps">MAPS</h1>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="exceptions.html">Exceptions</a></li>
+                <li><a href="try.html">Try</a></li>
+                <li><a href="catch.html">Catch</a></li>
+                <li><a href="throw.html">Throw</a></li>
+                <li><a href="throws.html">Throws</a></li>
+                <li><a href="finally.html">Finally</a></li>
+                <li><a href="user_defined_exceptions.html">User Defined Exceptions</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <aside class="content">
+        <h1>Catch Blocks </h1>
+        <h2>About Catch Block</h2>
+        <p>
+            A catch block is a fundamental part of Java's exception handling mechanism. It is used to catch and
+            handle
+            specific exceptions that may occur within a try block
+        </p>
+        <h2>What is a Catch Block</h2>
+        <p>A catch block is a Java programming construct that follows a try block.</p>
+        <p>It is used to catch and handle exceptions that are generated within the associated try block.</p>
+        <h2>When is it Used</h2>
+        <p>A catch block is used when you want to handle specific exceptions that may occur in the code
+            enclosed
+            within a try block.</p>
+        <p>It is used to define how your program should respond when a particular type of exception occurs.
+        </p>
+        <h2>Advantages of Catch Blocks</h2>
+        <ol>
+            <li>Exception Handling</li>
+            <p>
+                The primary advantage of a catch block is that it allows you to handle exceptions gracefully. It
+                prevents exceptions from propagating up the call stack, which can lead to program crashes.
+            </p>
+            <li>Specific Handling</li>
+            <p>
+                Catch blocks are specific to the type of exception they handle. This allows you to provide tailored
+                error-handling logic for different types of exceptions. For example, you can handle IOException
+                differently from NullPointerException.
+            </p>
+            <li>Error Reporting</li>
+            <p>
+                Catch blocks provide a structured way to log or report errors. This is essential for diagnosing and
+                debugging issues in your application.
+            </p>
+            <li>Program Robustness</li>
+            <p>
+                By using catch blocks, you can make your program more robust and resilient to errors, ensuring that
+                it
+                continues to operate even when exceptions occur.
+            </p>
+            <li>Prevent Data Loss</li>
+            <p>
+                In situations involving file I/O, database operations, or network communication, catch blocks can
+                help
+                prevent data loss or corruption by handling errors and rolling back transactions if needed.
+            </p>
+            <li>User-Friendly Messages</li>
+            <p>
+                Catch blocks allow you to display user-friendly error messages, making it easier for end-users to
+                understand and report issues.
+            </p>
+            <li>Resource Cleanup</li>
+            <p>
+                In addition to handling exceptions, catch blocks can be used to perform resource cleanup in cases
+                where
+                resources (e.g., files, database connections) need to be released.
+            </p>
+        </ol>
+
+        <div class="syntax">
+        <h2>Syntax of Catch Block</h2>
+        <p>
+        try{ <br />
+            // Code that may generate exceptions <br />
+        } <br />
+        catch (ExceptionType e) { <br />
+            // Code to handle the specific exception (ExceptionType) <br />
+        } <br />
+    </p>
+        <h2>Example</h2>
+        <p>
+            try {<br />
+                int result = 10 / 0; <br />
+            }<br />
+            catch (ArithmeticException e) { <br />
+                System.out.println("An arithmetic exception occurred: " + e); <br />
+            } 
+        </p><br>
+    </aside>
+</body>
+
+</html>

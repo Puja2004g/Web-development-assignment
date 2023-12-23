@@ -1,0 +1,104 @@
+<html>
+
+<head>
+    <title>
+        Try Block
+    </title>
+    <link rel="stylesheet" href="try.css">
+    <link rel="icon" href="https://pkhalder.com/wp-content/uploads/2022/02/cb88-java-logo-001.jpg">
+</head>
+
+<body>
+    <header>
+        <h1 class="maps">MAPS</h1>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="exceptions.html">Exceptions</a></li>
+                <li><a href="try.html">Try</a></li>
+                <li><a href="catch.html">Catch</a></li>
+                <li><a href="throw.html">Throw</a></li>
+                <li><a href="throws.html">Throws</a></li>
+                <li><a href="finally.html">Finally</a></li>
+                <li><a href="user_defined_exceptions.html">User Defined Exceptions</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <aside class="content">
+        <h1>Try Block</h1>
+        <h2>About Try Block</h2>
+        <p>
+            A try block is a fundamental part of Java's exception handling mechanism. It is used to enclose a block
+            of
+            code in which exceptional conditions might occur. The primary purpose of the try block is to provide a
+            structured way to handle exceptions and prevent your program from crashing when unexpected runtime
+            errors
+            occur
+        </p>
+        <h2>What is a try block</h2>
+        <p>
+        <p>A try block is a Java programming construct used to enclose a section of code where exceptions may
+            be
+            thrown.</p>
+        <p>It is the starting point for exception handling in Java.</p>
+        </p>
+        <h2>When is it used</h2>
+        <p>
+        <p>The try block is used when you have code that might raise exceptions, and you want to handle those
+            exceptions gracefully instead of letting them crash the program.</p>
+        <p>Common scenarios for using a try block include file operations, network communication, and
+            mathematical
+            calculations where division by zero or other unexpected errors can occur.</p>
+        </p>
+        <h2>Advantages of the try block</h2>
+        <ol>
+            <li>Robustness</li>
+            <p>
+                The primary advantage of a try block is that it makes your code more robust. It prevents your
+                program
+                from abruptly terminating when an exception is thrown, allowing you to handle errors gracefully
+            </p>
+            <li>Error Recovery</li>
+            <p>
+                It provides a structured way to recover from exceptions, such as logging the error, displaying
+                user-friendly messages, or taking alternative actions to handle exceptional conditions.
+            </p>
+            <li>Resource Cleanup</li>
+            <p>
+                The try block can be used in conjunction with a finally block to ensure that critical resources are
+                properly released, even in the presence of exceptions. This is important for maintaining resource
+                integrity.
+            </p>
+            <li>Structured Exception Handling</li>
+            <p>
+                It allows you to have multiple catch blocks, each handling a specific type of exception. This
+                enables
+                you to write specialized error-handling code for different exceptional situations.
+            </p>
+            <li>Improved Debugging</li>
+            <p>
+                By handling exceptions in a try block, you can log detailed information about the exception, making
+                it
+                easier to debug and fix issues in your code
+            </p>
+        </ol>
+        <div class="syntax">
+            <h2>Syntax of Try Block</h2>
+        <p>
+            try{ <br>
+                // Code that may generate exceptions <br />
+            } <br />
+        </p>
+            <h2>Example</h2>
+        <p>
+            try {<br />
+                int result = 10 / 0; <br />
+            }<br />
+        </p>
+                <br />
+        </div>
+    </aside>
+</body>
+
+</html>

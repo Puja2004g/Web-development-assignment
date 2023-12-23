@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>User-Defined Exceptions in Java</title>
+    <link rel="stylesheet" href="try.css">
+    <link rel="icon" href="https://pkhalder.com/wp-content/uploads/2022/02/cb88-java-logo-001.jpg">
+</head>
+
+<body>
+    <header>
+        <h1 class="maps">MAPS</h1>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="exceptions.html">Exceptions</a></li>
+                <li><a href="try.html">Try</a></li>
+                <li><a href="catch.html">Catch</a></li>
+                <li><a href="throw.html">Throw</a></li>
+                <li><a href="throws.html">Throws</a></li>
+                <li><a href="finally.html">Finally</a></li>
+                <li><a href="user_defined_exceptions.html">User Defined Exceptions</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <aside class="content">
+        <h1>User-Defined Exceptions</h1>
+            <h2>About User Defined Exceptions</h2>
+            <p>
+                In Java, you can create your own custom exceptions, known as user-defined exceptions. These exceptions
+                extend the standard exception classes and are used to handle specific error conditions in your
+                application.
+            </p>
+
+            <h2>What are User-Defined Exceptions</h2>
+            <p>
+                User-defined exceptions are custom exception classes that you create by extending the base exception
+                classes
+                available in Java, such as <code>Exception</code> or <code>RuntimeException</code>. You can use these
+                custom
+                exceptions to handle application-specific errors or conditions.
+            </p>
+
+            <h2>When to Use User-Defined Exceptions</h2>
+            <p>
+                User-defined exceptions are used in various scenarios, including:
+            </p>
+
+            <ol>
+                <li>Custom Error Handling: They allow you to define and handle application-specific errors or
+                    exceptional
+                    conditions that are not adequately covered by built-in exceptions.</li>
+                <li>Enhanced Readability: By creating custom exceptions, your code becomes more self-explanatory and
+                    readable, making it easier to understand and maintain.</li>
+                <li>Improved Error Reporting: Custom exceptions provide a structured way to report and handle errors,
+                    making
+                    it easier to log and trace problems in your application.</li>
+                <li>Application-Specific Logic: User-defined exceptions are valuable when your application needs to
+                    implement specific error-handling logic based on domain knowledge.</li>
+            </ol>
+
+            <h2>Advantages of User-Defined Exceptions</h2>
+            <ol>
+                <li>Custom Error Handling: They allow you to define and handle application-specific errors or
+                    exceptional
+                    conditions that are not adequately covered by built-in exceptions.</li>
+                <li>Enhanced Readability: By creating custom exceptions, your code becomes more self-explanatory and
+                    readable, making it easier to understand and maintain.</li>
+                <li>Improved Error Reporting: Custom exceptions provide a structured way to report and handle errors,
+                    making
+                    it easier to log and trace problems in your application.</li>
+                <li>Application-Specific Logic: User-defined exceptions are valuable when your application needs to
+                    implement specific error-handling logic based on domain knowledge.</li>
+            </ol>
+
+            <hr>
+
+            <h2>Syntax of User-Defined Exceptions in Java</h2>
+            <p>
+                Here is the syntax for creating a user-defined exception class in Java:
+            </p>
+            <div class="syntax">
+            <p>
+                public class CustomException extends Exception <br>{ <br>
+                    // constructor(s) and additional members can be defined
+                    <br>
+                } <br>
+            </p>
+        </div>
+            <p>
+                And here is how you can use your user-defined exception in a method:
+            </p>
+            <div class="syntax">
+            <p>
+                public void exampleMethod() throws  CustomException <br>{ <br>
+                    // method implementation <br>
+                } <br>
+            </p> <br>
+            </div>
+    </aside>
+</body>
+
+</html>

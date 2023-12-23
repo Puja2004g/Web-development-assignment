@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Throws in Java</title>
+    <link rel="stylesheet" href="try.css">
+    <link rel="icon" href="https://pkhalder.com/wp-content/uploads/2022/02/cb88-java-logo-001.jpg">
+</head>
+
+<body>
+    <header>
+        <h1 class="maps">MAPS</h1>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="exceptions.html">Exceptions</a></li>
+                <li><a href="try.html">Try</a></li>
+                <li><a href="catch.html">Catch</a></li>
+                <li><a href="throw.html">Throw</a></li>
+                <li><a href="throws.html">Throws</a></li>
+                <li><a href="finally.html">Finally</a></li>
+                <li><a href="user_defined_exceptions.html">User Defined Exceptions</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <aside class="content">
+        <h1>Throws</h1>
+        <h2>About "throws" in Java</h2>
+        <p>
+            The "throws" keyword in Java is used to declare exceptions that a method can throw. It is used in the method
+            signature to indicate that the method may throw one or more specific types of exceptions during its
+            execution.
+        </p>
+
+        <h2>What is "throws"</h2>
+        <p>
+            In Java, when a method can potentially encounter exceptions but does not handle them within the method, it
+            can
+            declare these exceptions using the "throws" keyword. This informs the calling code that it must either
+            handle
+            these exceptions or declare them again using "throws" in the calling method's signature.
+        </p>
+
+        <h2>When is "throws" used</h2>
+        <p>
+            "throws" is used in various scenarios, including:
+        </p>
+        <p>Declaring Checked Exceptions: It is used to declare checked exceptions, which are exceptions that are
+            checked at compile time. This helps ensure that calling code handles or acknowledges the possibility of
+            these exceptions.</p>
+        <p>Propagating Exceptions: "throws" allows exceptions to propagate up the call stack, enabling higher-level
+            code to handle or report the exceptions as needed.</p>
+        <p>Creating Custom Exception Types: Developers can use "throws" to create and use custom exception types
+            tailored to their application's needs.</p>
+        <p>Multi-Exception Handling: It is useful when a method can throw multiple exceptions of different types,
+            and
+            the caller needs to handle them or declare them accordingly.</p>
+
+        <h2>Advantages of "throws"</h2>
+        <ol>
+            <li>Clarity: It provides clarity to the caller about the exceptions that need to be handled when using the
+                method, enhancing code readability.</li>
+            <li>Propagation: "throws" enables exceptions to propagate up the call stack, allowing for centralized error
+                handling and logging in higher-level code.</li>
+            <li>Forcing Exception Handling: It enforces the obligation to handle exceptions, either by handling them
+                within
+                the method or declaring them again using "throws" in the calling method's signature, improving code
+                reliability.</li>
+            <li>Custom Exception Handling: Developers can create and use custom exception types, making it easier to
+                manage
+                and categorize different types of exceptions in their applications.</li>
+            <li>Multiple Exception Handling: "throws" is flexible enough to handle multiple exceptions of different
+                types,
+                providing a fine-grained approach to exception management.</li>
+        </ol>
+
+        <hr>
+
+        <h2>Syntax of "throws"</h2>
+        <p>
+            Here is the syntax for using "throws" in a method signature:
+        </p>
+        <div class="syntax">
+            <p>
+                public void exampleMethod() throws SomeException, AnotherException <br>{<br>
+                    // method implementation 
+                    <br>
+                }
+            </p><br>
+        </div>
+    </aside>
+</body>
+
+</html>
